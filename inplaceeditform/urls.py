@@ -19,7 +19,7 @@ try:
 except ImportError:  # Django < 1.4
     from django.conf.urls.defaults import url
 
-from views import save_ajax, get_field
+from .views import save_ajax, get_field
 
 urlpatterns = (
     url(r'^save/$', save_ajax, name='inplace_save'),
